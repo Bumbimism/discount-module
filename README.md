@@ -236,8 +236,8 @@ items added to the shopping cart. The
   "discounts": [
     {
       "type": "SEASONAL",
-      "every_X_THB": 40.00,
-      "discount_Y_THB": 300.00
+      "every_X_THB": 300.00,
+      "discount_Y_THB": 40.00
     }
   ]
 }
@@ -294,8 +294,8 @@ items added to the shopping cart. The
     },
     {
       "type": "SEASONAL",
-      "every_X_THB": 40.00,
-      "discount_Y_THB": 300.00
+      "every_X_THB": 300.00,
+      "discount_Y_THB": 40.00
     }
   ]
 }
@@ -305,7 +305,7 @@ items added to the shopping cart. The
 
 ```json
 {
-      "totalPrice": 662.50
+      "totalPrice": 647.50
 }
 ```
 
