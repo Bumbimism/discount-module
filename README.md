@@ -30,19 +30,19 @@ items added to the shopping cart. The
       "name": "T-Shirt",
       "category": "Clothing",
       "quantity": 1,
-      "price": 350
+      "price": 350.00
     },
     {
       "name": "Hat",
       "category": "Clothing",
       "quantity": 1,
-      "price": 250
+      "price": 250.00
     }
   ],
-  "codes": [
+  "discounts": [
     {
       "type": "FIXED",
-      "value": 50
+      "value": 50.00
     }
   ]
 }
@@ -73,19 +73,19 @@ items added to the shopping cart. The
       "name": "T-Shirt",
       "category": "Clothing",
       "quantity": 1,
-      "price": 350
+      "price": 350.00
     },
     {
       "name": "Hat",
       "category": "Clothing",
       "quantity": 1,
-      "price": 250
+      "price": 250.00
     }
   ],
-  "codes": [
+  "discounts": [
     {
       "type": "PERCENTAGE",
-      "value": 10
+      "value": 10.00
     }
   ]
 }
@@ -136,7 +136,7 @@ items added to the shopping cart. The
       "price": 700.00
     }
   ],
-  "codes": [
+  "discounts": [
     {
       "type": "CATEGORY",
       "percentage": 15.00,
@@ -172,25 +172,25 @@ items added to the shopping cart. The
       "name": "T-Shirt",
       "category": "Clothing",
       "quantity": 1,
-      "price": 350
+      "price": 350.00
     },
     {
       "name": "Hat",
       "category": "Accessories",
       "quantity": 1,
-      "price": 250
+      "price": 250.00
     },
     {
       "name": "Belt",
       "category": "Accessories",
       "quantity": 1,
-      "price": 230
+      "price": 230.00
     }
   ],
   "codes": [
     {
       "type": "POINTS",
-      "value": 68
+      "value": 68.00
     }
   ]
 }
@@ -218,26 +218,26 @@ items added to the shopping cart. The
       "name": "T-Shirt",
       "category": "Clothing",
       "quantity": 1,
-      "price": 350
+      "price": 350.00
     },
     {
       "name": "Hat",
       "category": "Accessories",
       "quantity": 1,
-      "price": 250
+      "price": 250.00
     },
     {
       "name": "Belt",
       "category": "Accessories",
       "quantity": 1,
-      "price": 230
+      "price": 230.00
     }
   ],
-  "codes": [
+  "discounts": [
     {
       "type": "SEASONAL",
-      "every_X_THB": 40,
-      "discount_Y_THB": 300
+      "every_X_THB": 40.00,
+      "discount_Y_THB": 300.00
     }
   ]
 }
@@ -265,37 +265,37 @@ items added to the shopping cart. The
       "name": "T-Shirt",
       "category": "Clothing",
       "quantity": 1,
-      "price": 350
+      "price": 350.00
     },
     {
       "name": "Hat",
       "category": "Accessories",
       "quantity": 1,
-      "price": 250
+      "price": 250.00
     },
     {
       "name": "Belt",
       "category": "Accessories",
       "quantity": 1,
-      "price": 230
+      "price": 230.00
     }
   ],
-  "codes": [
+  "discounts": [
     {
       "type": "FIXED",
-      "value": 50
+      "value": 50.00
     },
     {
       "type": "CATEGORY",
-      "percentage": 15,
+      "percentage": 15.00,
       "category": [
         "Clothing"
       ]
     },
     {
       "type": "SEASONAL",
-      "every_X_THB": 40,
-      "discount_Y_THB": 300
+      "every_X_THB": 40.00,
+      "discount_Y_THB": 300.00
     }
   ]
 }
@@ -305,7 +305,7 @@ items added to the shopping cart. The
 
 ```json
 {
-      "totalPrice": 750.00
+      "totalPrice": 662.50
 }
 ```
 
