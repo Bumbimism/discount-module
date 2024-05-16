@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "0d3a9500-0728-43b5-bac8-1facb7ca54da",
+		"name": "Discount-Module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32543070"
+	},
+	"item": [
+		{
+			"name": "story#1 : fixed",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"items\": [\r\n    {\r\n      \"name\": \"T-Shirt\",\r\n      \"category\": \"Clothing\",\r\n      \"quantity\": 1,\r\n      \"price\": 350.00\r\n    },\r\n    {\r\n      \"name\": \"Hat\",\r\n      \"category\": \"Clothing\",\r\n      \"quantity\": 1,\r\n      \"price\": 250.00\r\n    }\r\n  ],\r\n  \"discounts\": [\r\n    {\r\n      \"type\": \"FIXED\",\r\n      \"value\": 50.00\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cart/promotions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cart",
+						"promotions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "story#2 : percentage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"player\",\r\n  \"items\": [\r\n    {\r\n      \"name\": \"T-Shirt\",\r\n      \"category\": \"Clothing\",\r\n      \"quantity\": 1,\r\n      \"price\": 350.00\r\n    },\r\n    {\r\n      \"name\": \"Hat\",\r\n      \"category\": \"Clothing\",\r\n      \"quantity\": 1,\r\n      \"price\": 250.00\r\n    }\r\n  ],\r\n  \"discounts\": [\r\n    {\r\n      \"type\": \"PERCENTAGE\",\r\n      \"value\": 10.00\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cart/promotions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cart",
+						"promotions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "story#3 : category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cartItems\": [\r\n    { \"name\": \"T-Shirt\", \"price\": 100.0, \"category\": \"CLOTHING\" },\r\n    { \"name\": \"Summer Hat\", \"price\": 30.0, \"category\": \"ACCESSORIES\" },\r\n    { \"name\": \"Coffee\", \"price\": 10.0, \"category\": \"DRINK\" },\r\n    { \"name\": \"Sneakers\", \"price\": 250.0, \"category\": \"SHOES\" },\r\n    { \"name\": \"Laptop\", \"price\": 1200.0, \"category\": \"ELECTRONICS\" }\r\n  ],\r\n  \"discounts\": [\r\n    {\r\n      \"discountType\": \"FIXED_AMOUNT\",\r\n      \"amount\": 50.0\r\n    },\r\n    {\r\n      \"discountType\": \"FIXED_AMOUNT\",\r\n      \"amount\": 50.0\r\n    },\r\n    {\r\n      \"discountType\": \"PERCENTAGE\",\r\n      \"percentage\": 10.0\r\n    },\r\n    {\r\n      \"discountType\": \"POINTS\",\r\n      \"points\": 40\r\n    },\r\n    {\r\n      \"discountType\": \"CATEGORY\",\r\n      \"category\": \"CLOTHING\",\r\n      \"percentage\": 20.0\r\n    },\r\n    {\r\n      \"discountType\": \"SEASONAL\",\r\n      \"everyXTHB\": 500.0,\r\n      \"discountYTHB\": 20.0\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cart/apply-discounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cart",
+						"apply-discounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "story#4 : points",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"items\": [\r\n    {\r\n      \"name\": \"T-Shirt\",\r\n      \"category\": \"Clothing\",\r\n      \"quantity\": 1,\r\n      \"price\": 350.00\r\n    },\r\n    {\r\n      \"name\": \"Hat\",\r\n      \"category\": \"Accessories\",\r\n      \"quantity\": 1,\r\n      \"price\": 250.00\r\n    },\r\n    {\r\n      \"name\": \"Belt\",\r\n      \"category\": \"Accessories\",\r\n      \"quantity\": 1,\r\n      \"price\": 230.00\r\n    }\r\n  ],\r\n  \"discounts\": [\r\n    {\r\n      \"type\": \"POINTS\",\r\n      \"value\": 68.00\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cart/promotions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cart",
+						"promotions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "story#5 : seasonal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"items\": [\r\n    {\r\n      \"name\": \"T-Shirt\",\r\n      \"category\": \"Clothing\",\r\n      \"quantity\": 1,\r\n      \"price\": 350.00\r\n    },\r\n    {\r\n      \"name\": \"Hat\",\r\n      \"category\": \"Accessories\",\r\n      \"quantity\": 1,\r\n      \"price\": 250.00\r\n    },\r\n    {\r\n      \"name\": \"Belt\",\r\n      \"category\": \"Accessories\",\r\n      \"quantity\": 1,\r\n      \"price\": 230.00\r\n    }\r\n  ],\r\n  \"discounts\": [\r\n    {\r\n      \"type\": \"SEASONAL\",\r\n      \"every_X_THB\": 300.00,\r\n      \"discount_Y_THB\": 40.00\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cart/promotions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cart",
+						"promotions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "story#6 : coupon > on-top > seasonal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cartItems\": [\r\n    { \"name\": \"T-Shirt\", \"price\": 100.0, \"category\": \"CLOTHING\" },\r\n    { \"name\": \"Summer Hat\", \"price\": 30.0, \"category\": \"ACCESSORIES\" },\r\n    { \"name\": \"Coffee\", \"price\": 10.0, \"category\": \"DRINK\" },\r\n    { \"name\": \"Sneakers\", \"price\": 250.0, \"category\": \"SHOES\" },\r\n    { \"name\": \"Laptop\", \"price\": 1200.0, \"category\": \"ELECTRONICS\" }\r\n  ],\r\n  \"discounts\": [\r\n    {\r\n      \"discountType\": \"FIXED_AMOUNT\",\r\n      \"amount\": 50.0\r\n    },\r\n    {\r\n      \"discountType\": \"FIXED_AMOUNT\",\r\n      \"amount\": 50.0\r\n    },\r\n    {\r\n      \"discountType\": \"PERCENTAGE\",\r\n      \"percentage\": 10.0\r\n    },\r\n    {\r\n      \"discountType\": \"POINTS\",\r\n      \"points\": 40\r\n    },\r\n    {\r\n      \"discountType\": \"CATEGORY\",\r\n      \"category\": \"CLOTHING\",\r\n      \"percentage\": 20.0\r\n    },\r\n    {\r\n      \"discountType\": \"SEASONAL\",\r\n      \"everyXTHB\": 500.0,\r\n      \"discountYTHB\": 20.0\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cart/apply-discounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cart",
+						"apply-discounts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
