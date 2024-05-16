@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.util.Date;
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
@@ -30,9 +31,7 @@ public class GlobalExceptionHandler {
         return error;
     }
 
-    @ExceptionHandler({
-            DiscountTypeDuplicateException.class,
-    })
+    @ExceptionHandler({DiscountTypeDuplicateException.class,})
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ResponseBody
     public ErrorDTO handleGlobalException(HttpServletRequest request, Exception ex) {

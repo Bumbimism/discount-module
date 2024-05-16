@@ -7,6 +7,7 @@ import org.example.shoppingcart.model.Discount;
 import org.example.shoppingcart.model.Item;
 
 import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,7 +18,7 @@ public class CategoryDiscount extends Discount {
 
     @Override
     public double applyDiscount(double total, List<Item> items) {
-        if(percentage == 0.0 || category.isEmpty()){
+        if (percentage == 0.0 || category.isEmpty()) {
             return total;
         }
         double discount = 0.0;
@@ -28,6 +29,7 @@ public class CategoryDiscount extends Discount {
         }
         return total - discount;
     }
+
     @Override
     public DiscountType getType() {
         return DiscountType.ONTOP;

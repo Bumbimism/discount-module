@@ -8,6 +8,7 @@ import java.util.List;
 
 @Data
 public class CartDiscountRequest {
+
     private List<Item> items;
     private List<Discount> discounts;
 }

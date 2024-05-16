@@ -8,7 +8,6 @@ import org.example.shoppingcart.model.Item;
 import java.util.List;
 
 import static java.lang.Math.floor;
-import static java.lang.Math.round;
 
 @Data
 public class SeasonalDiscount extends Discount {
@@ -21,10 +20,10 @@ public class SeasonalDiscount extends Discount {
 
     @Override
     public double applyDiscount(double total, List<Item> items) {
-        if(everyXTHB == 0.0 && discountYTHB == 0.0){
+        if (everyXTHB == 0.0 && discountYTHB == 0.0) {
             return total;
         }
-        return total -  (floor(total / everyXTHB) * discountYTHB);
+        return total - (floor(total / everyXTHB) * discountYTHB);
     }
 
     @Override

@@ -8,7 +8,6 @@ import org.example.shoppingcart.model.Item;
 import org.example.shoppingcart.model.discount.DiscountType;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.List;
 
@@ -47,7 +46,7 @@ public class DiscountService {
             total = calculatePrice(total, items, seasonal);
         }
         if (total < 0) {
-            return new CartDiscountResponse(0.0 );
+            return new CartDiscountResponse(0.0);
         }
 
         return new CartDiscountResponse(total);

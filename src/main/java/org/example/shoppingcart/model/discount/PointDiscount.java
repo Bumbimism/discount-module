@@ -11,6 +11,7 @@ import static java.lang.Math.min;
 @Data
 public class PointDiscount extends Discount {
     private int value;
+
     @Override
     public double applyDiscount(double total, List<Item> items) {
         if (value == 0.0) {

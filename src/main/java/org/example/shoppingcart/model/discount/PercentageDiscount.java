@@ -12,11 +12,12 @@ public class PercentageDiscount extends Discount {
 
     @Override
     public double applyDiscount(double total, List<Item> items) {
-        if(value == 0.0){
+        if (value == 0.0) {
             return total;
         }
         return total - (total * value / 100.00);
     }
+
     @Override
     public DiscountType getType() {
         return DiscountType.COUPON;
