@@ -1,3 +1,12 @@
+#### About Project
+This project based on Java Spring Boot / Gradle 
+
+You can try it on :
+1. curl command
+2. postman by import the collection
+3. swagger: http://localhost:8080/swagger-ui/index.html#/
+4. etc.
+
 # The discount module
 
 The discount module is to calculate the final price of an order by applying multiple discount campaigns to
