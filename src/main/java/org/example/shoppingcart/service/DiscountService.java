@@ -8,13 +8,13 @@ import org.example.shoppingcart.model.Item;
 import org.example.shoppingcart.model.discount.DiscountType;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.List;
 
 
 @Service
 public class DiscountService {
-    Double total = 0.0;
 
     public CartDiscountResponse calculateFinalPrice(CartDiscountRequest cartDiscountRequest) {
 
@@ -48,18 +48,14 @@ public class DiscountService {
             total = calculatePrice(total, items, seasonal);
         }
         if (total < 0) {
-            CartDiscountResponse response = new CartDiscountResponse();
-            response.setTotalPrice(0.0);
-            return response;
+            return new CartDiscountResponse(0.0 );
         }
 
-        CartDiscountResponse response = new CartDiscountResponse();
-        response.setTotalPrice(total);
-        return response;
+        return new CartDiscountResponse(total);
     }
 
     private double calculatePrice(double total, List<Item> items, List<Discount> discounts) {
-        double Price = 0;
+        double Price = 0.0;
         for (Discount discount : discounts) {
             Price = discount.applyDiscount(total, items);
         }
