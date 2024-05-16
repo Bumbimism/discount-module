@@ -127,13 +127,13 @@ items added to the shopping cart. The
       "name": "Watch",
       "category": "Accessories",
       "quantity": 1,
-      "price": 700.00
+      "price": 850.00
     },
     {
       "name": "Bag",
       "category": "Accessories",
       "quantity": 1,
-      "price": 700.00
+      "price": 650.00
     }
   ],
   "discounts": [
@@ -152,7 +152,7 @@ items added to the shopping cart. The
 
 ```json
 {
-      "totalPrice": 2382.50 
+      "totalPrice": 2392.50
 }
 ```
 
@@ -187,7 +187,7 @@ items added to the shopping cart. The
       "price": 230.00
     }
   ],
-  "codes": [
+  "discounts": [
     {
       "type": "POINTS",
       "value": 68.00
