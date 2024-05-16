@@ -15,7 +15,7 @@ public class PercentageDiscount extends Discount {
         if(value == 0.0){
             return total;
         }
-        return total - (total * value / 100);
+        return total - (total * value / 100.00);
     }
     @Override
     public DiscountType getType() {

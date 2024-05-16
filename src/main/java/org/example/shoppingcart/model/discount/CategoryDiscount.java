@@ -20,10 +20,10 @@ public class CategoryDiscount extends Discount {
         if(percentage == 0.0 || category.isEmpty()){
             return total;
         }
-        double discount = 0L;
+        double discount = 0.0;
         for (Item item : items) {
             if (category.contains(item.getCategory())) {
-                discount += (item.getPrice() * percentage / 100);
+                discount += (item.getPrice() * percentage / 100.00);
             }
         }
         return total - discount;
