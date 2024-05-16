@@ -19,7 +19,7 @@ items added to the shopping cart. The
 
 #### Technical Details: EXP01
 
-*  POST /carts/promotions
+*  POST /cart/promotions
 
 * Request Body
 
@@ -61,7 +61,7 @@ items added to the shopping cart. The
 
 #### Technical Details: EXP02
 
-*  POST /carts/promotions
+*  POST /cart/promotions
 
 * Request Body
 
@@ -104,7 +104,7 @@ items added to the shopping cart. The
 
 #### Technical Details: EXP03
 
-*  POST /carts/promotions
+*  POST /cart/promotions
 
 * Request Body
 
@@ -161,7 +161,7 @@ items added to the shopping cart. The
 
 #### Technical Details: EXP04
 
-*  POST /carts/promotions
+*  POST /cart/promotions
 
 * Request Body
 
@@ -204,11 +204,11 @@ items added to the shopping cart. The
 }
 ```
 ### Story: EXP05
-	* As a user, I want to apply a "Discount by points" seasonal coupon in my cart, so that I can get a discount on my purchase.
+	* As a user, I want to apply a "Seasonal" coupon in my cart, so that I can get a discount on my purchase.
 
 #### Technical Details: EXP05
 
-*  POST /carts/promotions
+*  POST /cart/promotions
 * Request Body
 
 ```json
@@ -255,7 +255,7 @@ items added to the shopping cart. The
 
 #### Technical Details: EXP06
 
-*  POST /carts/promotions
+*  POST /cart/promotions
 * Request Body
 
 ```json
