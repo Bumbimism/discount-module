@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 public class FixedDiscount extends Discount {
-    @JsonProperty("Amount")
+    @JsonProperty("amount")
     private Double amount;
 
     @Override

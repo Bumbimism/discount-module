@@ -9,8 +9,8 @@ import java.util.List;
 
 @Data
 public class CartDiscountRequest {
-    @JsonProperty("Items in cart")
+    @JsonProperty("items_in_cart")
     private List<Item> items;
-    @JsonProperty("Discount")
+    @JsonProperty("discounts")
     private List<Discount> discounts;
 }

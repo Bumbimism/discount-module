@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 public class PercentageDiscount extends Discount {
-    @JsonProperty("Percentage")
+    @JsonProperty("percentage")
     private Double percentage;
 
     @Override

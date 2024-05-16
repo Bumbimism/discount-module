@@ -13,9 +13,9 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CategoryDiscount extends Discount {
-    @JsonProperty("Amount")
+    @JsonProperty("amount")
     private Double percentage;
-    @JsonProperty("Category")
+    @JsonProperty("category")
     private List<String> category;
 
 

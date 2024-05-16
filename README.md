@@ -1,9 +1,9 @@
 # The discount module
 
 The discount module is to calculate the final price of an order by applying multiple discount campaigns to
-items added to the shopping cart. 
+items_in_cart added to the shopping cart. 
 
-- Take the list items in a shopping cart.
+- Take the list items_in_cart in a shopping cart.
 - Take the list of discount campaigns and their parameters to apply.
 - Calculate the final price according to the rules.
 
@@ -23,7 +23,7 @@ items added to the shopping cart.
 
 ```json
 {
-  "items": [
+  "items_in_cart": [
     {
       "name": "T-Shirt",
       "category": "Clothing",
@@ -40,7 +40,7 @@ items added to the shopping cart.
   "discounts": [
     {
       "type": "FIXED",
-      "value": 50.00
+      "amount": 50.00
     }
   ]
 }
@@ -50,7 +50,7 @@ items added to the shopping cart.
 
 ```json
 {
-      "totalPrice": 550.00 
+      "total_price": 550.00 
 }
 ```
 
@@ -66,7 +66,7 @@ items added to the shopping cart.
 ```json
 {
   "username": "player",
-  "items": [
+  "items_in_cart": [
     {
       "name": "T-Shirt",
       "category": "Clothing",
@@ -83,7 +83,7 @@ items added to the shopping cart.
   "discounts": [
     {
       "type": "PERCENTAGE",
-      "value": 10.00
+      "percentage": 10.00
     }
   ]
 }
@@ -93,7 +93,7 @@ items added to the shopping cart.
 
 ```json
 {
-      "totalPrice": 540.00 
+      "total_price": 540.00 
 }
 ```
 
@@ -108,7 +108,7 @@ items added to the shopping cart.
 
 ```json
 {
-  "items": [
+  "items_in_cart": [
     {
       "name": "T-Shirt",
       "category": "Clothing",
@@ -137,7 +137,7 @@ items added to the shopping cart.
   "discounts": [
     {
       "type": "CATEGORY",
-      "percentage": 15.00,
+      "amount": 15.00,
       "category": [
         "Clothing"
       ]
@@ -150,7 +150,7 @@ items added to the shopping cart.
 
 ```json
 {
-      "totalPrice": 2392.50
+      "total_price": 2392.50
 }
 ```
 
@@ -165,7 +165,7 @@ items added to the shopping cart.
 
 ```json
 {
-  "items": [
+  "items_in_cart": [
     {
       "name": "T-Shirt",
       "category": "Clothing",
@@ -188,7 +188,7 @@ items added to the shopping cart.
   "discounts": [
     {
       "type": "POINTS",
-      "value": 68.00
+      "customer_points": 68.00
     }
   ]
 }
@@ -198,7 +198,7 @@ items added to the shopping cart.
 
 ```json
 {
-      "totalPrice": 762.00 
+      "total_price": 762.00 
 }
 ```
 ### Story: EXP05
@@ -211,7 +211,7 @@ items added to the shopping cart.
 
 ```json
 {
-  "items": [
+  "items_in_cart": [
     {
       "name": "T-Shirt",
       "category": "Clothing",
@@ -245,7 +245,7 @@ items added to the shopping cart.
 
 ```json
 {
-      "totalPrice": 750.00
+      "total_price": 750.00
 }
 ```
 ### Story: EXP06
@@ -258,7 +258,7 @@ items added to the shopping cart.
 
 ```json
 {
-  "items": [
+  "items_in_cart": [
     {
       "name": "T-Shirt",
       "category": "Clothing",
@@ -281,11 +281,11 @@ items added to the shopping cart.
   "discounts": [
     {
       "type": "FIXED",
-      "value": 50.00
+      "amount": 50.00
     },
     {
       "type": "CATEGORY",
-      "percentage": 15.00,
+      "amount": 15.00,
       "category": [
         "Clothing"
       ]
@@ -303,7 +303,7 @@ items added to the shopping cart.
 
 ```json
 {
-      "totalPrice": 647.50
+      "total_price": 647.50
 }
 ```
 

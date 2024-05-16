@@ -11,7 +11,7 @@ import static java.lang.Math.min;
 
 @Data
 public class PointDiscount extends Discount {
-    @JsonProperty("Customer points")
+    @JsonProperty("customer_points")
     private int points;
 
     @Override

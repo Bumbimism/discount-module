@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class CartDiscountResponse {
-    @JsonProperty("Total Price")
+    @JsonProperty("total_price")
     private double totalPrice;
 
     public CartDiscountResponse(double totalPrice) {
