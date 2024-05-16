@@ -1,9 +1,7 @@
 # The discount module
 
 The discount module is to calculate the final price of an order by applying multiple discount campaigns to
-items added to the shopping cart. The
-
-## Business Requirements
+items added to the shopping cart. 
 
 - Take the list items in a shopping cart.
 - Take the list of discount campaigns and their parameters to apply.
