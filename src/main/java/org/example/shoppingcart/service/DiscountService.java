@@ -18,7 +18,6 @@ public class DiscountService {
 
     public CartDiscountResponse calculateFinalPrice(CartDiscountRequest cartDiscountRequest) {
 
-
         List<Item> items = cartDiscountRequest.getItems();
         List<Discount> discounts = cartDiscountRequest.getDiscounts();
 
