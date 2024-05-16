@@ -1,5 +1,6 @@
 package org.example.shoppingcart.model.discount;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import org.example.shoppingcart.model.Discount;
 import org.example.shoppingcart.model.Item;
@@ -10,14 +11,15 @@ import static java.lang.Math.min;
 
 @Data
 public class PointDiscount extends Discount {
-    private int value;
+    @JsonProperty("Customer points")
+    private int points;
 
     @Override
     public double applyDiscount(double total, List<Item> items) {
-        if (value == 0.0) {
+        if (points == 0.0) {
             return total;
         }
-        double discount = min(value, 0.2 * total);
+        double discount = min(points, 0.2 * total);
 
         return total - discount;
     }
