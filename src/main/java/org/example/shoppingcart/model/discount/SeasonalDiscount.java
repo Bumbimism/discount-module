@@ -24,7 +24,7 @@ public class SeasonalDiscount extends Discount {
         if(everyXTHB == 0.0 && discountYTHB == 0.0){
             return total;
         }
-        return total -= floor(total / everyXTHB) * discountYTHB;
+        return total -  (floor(total / everyXTHB) * discountYTHB);
     }
 
     @Override
